@@ -43,7 +43,7 @@ Route::middleware(['auth'])->group(function () {
   Route::get('/primes/create', CreatePrime::class)->name('primes.create');
   Route::get('/primes/{prime}/edit', EditPrime::class)->name('primes.edit');
   Route::get('/primes', ListePrime::class)->name('primes.index');
-  //Routes pour sanctions
+  //Routes pour sanctions employers
   Route::get('/sanctions/create', CreateSanction::class)->name('sanctions.create');
   Route::get('/sanctions', ListSanction::class)->name('sanctions.index');
   Route::get('/sanctions/{sanction}/edit', EditSanction::class)->name('sanctions.edit');
